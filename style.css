@@ -1,0 +1,179 @@
+/*  POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* SONG MYUNG FONT */
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+/* 
+USE THIS TO USE IN YOUR FONT 
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Song Myung', serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: rgb(180,20,184);
+    background: linear-gradient(90deg, rgba(180,20,184,0.7919320594479831) 4%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    font-family: 'Song Myung', serif;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CONTENT STYLE */
+main{
+    background-color: white;
+    
+    min-height: 700px;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+
+/* HEADER STYLE */
+.main_header{
+    height: 200px;
+    padding: 1rem;
+}
+
+.main_header label{
+    font-size: 2em;
+    color: white;
+}
+.main_header, form, .form-group{
+    
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #B4876D;
+
+}
+
+.task_input{
+    
+    height: 40px;
+}
+
+/* }BUTTON DESIGN */
+.bn632-hover {
+    
+    width: 160px;
+    font-size: 16px;
+    
+    color: black;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+  .bn632-hover:disabled {
+    opacity: 0.7; /* Adjust the opacity to your preference for the disabled state */
+    cursor: not-allowed; /* Use the "not-allowed" cursor for disabled state */
+    /* Add any additional styling for the disabled state if needed */
+    -o-transition:none;
+    -webkit-transition: none;
+    transition:none;
+    background-position: 0;
+  }
+/* 
+BODY OF THE MAIN 
+    - the content of the tasks added
+*/
+
+.main_body{
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: auto;
+}
+
+.main_body .text{
+    color: #D2691E;
+}
+.content{
+    color: black;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 1.4em;
+    
+    
+    width: 70%;
+    margin: auto;
+}
+
+.task_div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    
+    align-items: center;
+    width: inherit;
+    margin: auto;
+
+}
+
+
+.no-task-message{
+    width: 100%;
+    opacity: 0.2;
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+}
